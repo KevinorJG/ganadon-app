@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">signup</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid fixed>
+    <form [formGroup]="signupForm" (ngSubmit)="register()">
+      <ion-list>
+        <ion-row class="ion-text-center">
+          <ion-col size="12">
+            <img src="../../../../assets/imagen.png" alt="">
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-text-center ion-align-items-center">
+          <ion-col size="12">
+            <ion-item>
+              <ion-input required formControlName="name" type="text" placeholder="Nombre y Apellido"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12">
+            <ion-item>
+              <ion-input required formControlName="email" type="text" placeholder="Correo electronico"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12">
+            <ion-item>
+              <ion-input required formControlName="phone" type="text" placeholder="Telefono"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12">
+            <ion-item>
+              <ion-input required formControlName="age" type="numeric" placeholder="Edad"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12">
+            <ion-button block color="primary" type="submit" [disabled]="signupForm.invalid">
+              Iniciar sesión
+            </ion-button>
+          </ion-col>   
+        </ion-row>
+      </ion-list>    
+    </form>
+  </ion-grid>
+</ion-content>

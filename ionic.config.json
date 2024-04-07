@@ -1,0 +1,7 @@
+{
+  "name": "ganadon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
