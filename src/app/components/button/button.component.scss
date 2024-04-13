@@ -1,0 +1,30 @@
+ion-button {
+    width: 322px;
+    height: 53px;
+
+    --background: #37B943;
+    --background-hover: #37B943;
+    --background-hover-opacity: 1;
+    --border-color: #37B943;
+    --border-radius: 16px;
+    --border-style: solid;
+    --border-width: 0px;
+    /* Cambiado a 0px para que no haya borde */
+    --box-shadow: none;
+    /* Cambiado a none para eliminar la sombra */
+    --color: white;
+    --color-activated: white;
+    --color-focused: white;
+    --color-hover: white;
+    --opacity: 1;
+    --padding-bottom: 0px;
+    /* Cambiado a 0px para eliminar el relleno */
+    --padding-end: 0px;
+    /* Cambiado a 0px para eliminar el relleno */
+    --padding-start: 0px;
+    /* Cambiado a 0px para eliminar el relleno */
+    --padding-top: 0px;
+    /* Cambiado a 0px para eliminar el relleno */
+    --ripple-color: #1e1e1e;
+    --transition: background-color 15ms linear;
+}

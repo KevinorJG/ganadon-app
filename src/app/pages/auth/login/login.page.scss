@@ -1,0 +1,33 @@
+ion-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Para ocupar toda la altura de la pantalla */
+    position: relative;
+    /* Importante para el posicionamiento absoluto de las imágenes */
+  
+  
+}
+
+div#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-grid {
+    flex: 1;
+    /* Para que el ion-grid ocupe el espacio restante */
+}
+
+img#shape-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img#shape-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
