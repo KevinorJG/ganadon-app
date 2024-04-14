@@ -36,4 +36,10 @@ export class AppService {
 
 
 
+  public refreshApp(){
+  
+  }
+
+
+
 }

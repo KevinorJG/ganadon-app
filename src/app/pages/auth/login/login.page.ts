@@ -44,7 +44,7 @@ export class LoginPage implements OnInit {
       password: this.loginForm.get('password')?.value
     }
 
-    localStorage.setItem(AUTH_USER, JSON.stringify(infoUser));
+   // localStorage.setItem(AUTH_USER, JSON.stringify(infoUser));
 
     this.router.navigate(['/app'], {
       replaceUrl: true,
@@ -55,6 +55,9 @@ export class LoginPage implements OnInit {
   isAuth(){
     return localStorage.getItem(AUTH_USER) != null;
   }
+
+
+  
 
   
 
